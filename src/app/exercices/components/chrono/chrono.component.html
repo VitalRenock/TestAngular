@@ -1,6 +1,6 @@
-<p>Exercice chrono</p>
+<p>Exercice Chronomètre</p>
 
-<p>Temps: <strong>{{minutes | number : '2.0'}}:{{seconds | number : '2.0'}}</strong></p>
+<p>Chrono: <strong>{{minutes | number : '2.0'}}:{{seconds | number : '2.0'}}</strong></p>
 
 <button (click)="startChrono()" [disabled]="monChrono != 0">Start</button>
 <button (click)="stopChrono()" [disabled]="monChrono == 0">Stop</button>

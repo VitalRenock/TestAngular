@@ -1,7 +1,9 @@
 Installation Angular
-    Installer NodeJS:
-        Prendre la version LTS sur le site officiel.
-    Installer Angular:
+
+    - Installer NodeJS:
+        Prendre la dernière version LTS sur le site officiel et l'installer (laisser les options par défaut).
+
+    - Installer Angular:
         - Ouvrir l'invite de commande (pas le 'PowerShell')
         - tapez la commande:
             npm install -g @angular/cli
@@ -9,13 +11,17 @@ Installation Angular
             ng version
 
 
+
 Installer Visual Studio Code et les plugins suivants:
+
     - Angular Schematics (exécution de commande via un menu contextuelle)
     - Angular Snippets
     - Angular Language Service
 
 
+
 Création d'un nouveau projet Angular:
+
     - Créer un nouveau dossier à l'emplacement souhaité pour recevoir le projet Angular.
     - Ouvrir avec Visual Studio Code le nouveau dossier.
     - Ouvrir le terminal de Visual Studio Code:
@@ -34,36 +40,12 @@ Création d'un nouveau projet Angular:
             Ces questions peuvent être évitées en ajoutant les options adéquates à la commande de base.
 
 
-Démarrer le serveur (NG SERVE):
-    - Tapez la commande suivante pour démarrer le serveur sur le port 4200 (par défaut)
-        ng serve
-            Pour spécifier le port (cas de plusieurs Apps)
-            ng serve --port=42XX
-        L’option --open ouvre l’app dans le navigateur par défaut une fois celle ci compilée
 
+Importation d'un projet Angular depuis GitHub:
 
-Explications rapide des fichiers:
-    - Les fichiers se terminant par '.html':
-        Contenu d'un composant.
-    - Les fichiers se terminal par '.scss':
-        Style d'un composant.
-    - Les fichiers se terminant par 'routing.module.ts'
-        Système de routing.
-    - Les fichiers se terminant par 'module.ts'
-        Déclaration des composants de notre module
-    - Les fichiers se terminant par 'component.ts'
-        Déclaration des composants de notre module
-
-
-Structure des dossiers:
-- app
-    - components
-        - component1
-
-
-Créer un Custom Pipe
-Pour formatter des variables.
-
-Commande Terminal VSC:
-    ng g p shared/pipes/nomDeMonPipe
-Ajout à shared.Module.ts dans l'export
+    - Cloner le projet depuis GitHub à l'emplacement souhaité.
+    - Ouvrir le dossier cloné avec Visual Studio Code.
+    - Ouvrir un nouveau terminal dans VSC.
+    - Taper la commande suivante:
+        (Installe les packages 'NodeJS' nécessaires qui sont renseignés dans le fichier 'package.json')
+        npm install

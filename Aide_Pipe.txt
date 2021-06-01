@@ -1,0 +1,6 @@
+Créer un Custom Pipe
+Permet de formater des variables.
+
+Commande Terminal VSC:
+    ng g p shared/pipes/nomDeMonPipe
+Ajout à shared.Module.ts dans l'export

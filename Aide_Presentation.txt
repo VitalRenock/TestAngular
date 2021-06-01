@@ -1,0 +1,45 @@
+Démarrer le serveur (NG SERVE):
+    - Tapez la commande suivante pour démarrer le serveur sur le port 4200 (par défaut)
+        ng serve
+            Pour spécifier le port (cas de plusieurs Apps)
+            ng serve --port=42XX
+        L’option --open ouvre l’app dans le navigateur par défaut une fois celle ci compilée
+
+
+
+Explications rapide des fichiers:
+    
+    - Les fichiers se terminant par '.html':
+        =>  Contenu d'un composant.
+
+    - Les fichiers se terminal par '.scss':
+        =>  Style d'un composant.
+
+    - Les fichiers se terminant par 'routing.module.ts'
+        =>  Système de routing.
+
+    - Les fichiers se terminant par 'module.ts'
+        =>  Déclaration des composants de notre module.
+
+    - Les fichiers se terminant par 'component.ts'
+        =>  Déclaration des composants de notre module.
+
+
+
+Structure des dossiers:
+- dossier: app
+    - dossier: 'components' (dossier pour les composants)
+        - dossier: 'component1' (dossier pour les fichiers du composant 1)
+            - 'xxx.component.html' (structure du composant)
+            - 'xxx.component.scss' (style du composant)
+            - 'xxx.component.ts' (logique du composant)
+        - dossier: 'component2'
+            - ...
+        - ...
+    
+    - dossier: module1 (dossier pour les composants et fichiers du module 1)
+        - dossier: 'components' (idem çi-dessus, dossier pour les composants)
+            - ...
+        - fichier: 'module1-routing.module.ts' (pour définir les routes possibles pour le module)
+        - fichier: 'module1.module.ts (pour gérer la déclaration et l'import/export des composants du module)
+        
