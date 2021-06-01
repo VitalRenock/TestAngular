@@ -1,0 +1,7 @@
+<p>Exercice chrono</p>
+
+<p>Temps: <strong>{{minutes | number : '2.0'}}:{{seconds | number : '2.0'}}</strong></p>
+
+<button (click)="startChrono()" [disabled]="monChrono != 0">Start</button>
+<button (click)="stopChrono()" [disabled]="monChrono == 0">Stop</button>
+<button (click)="resetChrono()" [disabled]="monChrono == 0">Reset</button>

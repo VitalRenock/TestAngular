@@ -1,0 +1,10 @@
+<h3>Demo Event Binding + attributes</h3>
+
+<p>Contenu de 'maVar': <strong>{{maVar}}</strong></p>
+
+<button (click)="plus()" [disabled]="maVar >= 10">+</button>
+<button (click)="moins()" [disabled]="maVar < 1">-</button>
+
+
+<!-- <input type="text" [([(ngModel)]="binding")]> -->
+<button (click)="changeColor()">Change Color</button>

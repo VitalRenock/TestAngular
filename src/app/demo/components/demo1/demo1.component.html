@@ -1,0 +1,15 @@
+<p>Demo1 Binding One-way</p>
+
+<p>Contenu de ma variable 'monNum' : {{maProp}}</p>
+<p>Contenu de ma variable 'monNum' : {{monNum}}</p>
+<p>Contenu de ma variable 'obj' : {{obj.nom}}</p>
+
+<!-- 
+    {{nomPropriété}} = Binding one-way : Lecture de propriété
+ -->
+
+ <h5>Binding Two-way</h5>
+ <p>
+     <!-- [(ngModel)] provient de FormModule (fournis par SharedModule) -->
+     MaProp : <input type="text" [(ngModel)] = "maProp" >
+ </p>

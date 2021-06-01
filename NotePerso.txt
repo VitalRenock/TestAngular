@@ -1,0 +1,69 @@
+Installation Angular
+    Installer NodeJS:
+        Prendre la version LTS sur le site officiel.
+    Installer Angular:
+        - Ouvrir l'invite de commande (pas le 'PowerShell')
+        - tapez la commande:
+            npm install -g @angular/cli
+        - Vérifier l'installation:
+            ng version
+
+
+Installer Visual Studio Code et les plugins suivants:
+    - Angular Schematics (exécution de commande via un menu contextuelle)
+    - Angular Snippets
+    - Angular Language Service
+
+
+Création d'un nouveau projet Angular:
+    - Créer un nouveau dossier à l'emplacement souhaité pour recevoir le projet Angular.
+    - Ouvrir avec Visual Studio Code le nouveau dossier.
+    - Ouvrir le terminal de Visual Studio Code:
+        - Sélectionner 'Command Prompt' dans le terminal (pas le 'PowerShell')
+        - Vérifier qu'on se situe bien dans notre dossier avec le terminal.
+        - Tapez la commande suivante pour installer un nouveau projet:
+            ng new “nom_du_projet”
+            Options possibles:
+                --skip-tests (Désactive la copie des fichiers de test unitaires)
+                --routing (Ajoute le routage à l’application)
+                --strict (true/false) (Utilisation du mode strict qui force l’initialisation des variables/propriété dans le constructeur)
+                --skip-gitDésactive l’initialisation par défaut du dépôt Git
+            Une fois la commande basique exécutée (ng new “projet”), le système vous posera 3...
+                Question 1: Ajouter angular routing ? => répondre oui
+                Question 2: Mode de template css ? => choisir SCSS (pour plus de compatibilité avec les différents framework/librairie graphiques)
+            Ces questions peuvent être évitées en ajoutant les options adéquates à la commande de base.
+
+
+Démarrer le serveur (NG SERVE):
+    - Tapez la commande suivante pour démarrer le serveur sur le port 4200 (par défaut)
+        ng serve
+            Pour spécifier le port (cas de plusieurs Apps)
+            ng serve --port=42XX
+        L’option --open ouvre l’app dans le navigateur par défaut une fois celle ci compilée
+
+
+Explications rapide des fichiers:
+    - Les fichiers se terminant par '.html':
+        Contenu d'un composant.
+    - Les fichiers se terminal par '.scss':
+        Style d'un composant.
+    - Les fichiers se terminant par 'routing.module.ts'
+        Système de routing.
+    - Les fichiers se terminant par 'module.ts'
+        Déclaration des composants de notre module
+    - Les fichiers se terminant par 'component.ts'
+        Déclaration des composants de notre module
+
+
+Structure des dossiers:
+- app
+    - components
+        - component1
+
+
+Créer un Custom Pipe
+Pour formatter des variables.
+
+Commande Terminal VSC:
+    ng g p shared/pipes/nomDeMonPipe
+Ajout à shared.Module.ts dans l'export

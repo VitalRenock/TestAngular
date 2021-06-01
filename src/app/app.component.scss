@@ -1,0 +1,28 @@
+.header {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    padding: 25px;
+    top: 0;
+    left: 0;
+    border-bottom: black;
+    background-color: lightblue;
+}
+
+.nav {
+    position: fixed;
+    left: 0%;
+    top: 100px;
+    padding: 10px;
+    overflow-y: scroll;
+    width: 20%;
+    height: 85%;
+    border-right: darkgray 1px solid;
+}
+
+.content {
+    position: absolute;
+    top: 100px;
+    left: 20%;
+    padding: 30px;   
+}

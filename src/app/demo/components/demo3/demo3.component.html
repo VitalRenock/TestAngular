@@ -1,0 +1,32 @@
+<p>Pipes</p>
+
+<p>Chaine par défaut : {{maVar1}}</p>
+<p>Démo UpperCasePipe : {{maVar1 | uppercase}}</p>
+<p>Démo LowerCasePipe : {{maVar1 | lowercase}}</p>
+<p>Démo TitleCasePipe : {{maVar1 | titlecase}}</p>
+<p>Démo Pipe imbriqués : {{maVar1 | lowercase | titlecase}}</p>
+
+<hr>
+
+<p>Nombre : {{maVar2}}</p>
+<p>Démo Decimal Pipe : {{maVar2 | number : '3.1-3'}}</p>
+<p>Démo currency Pipe : {{maVar2 | currency : 'EUR'}}</p>
+<p>Démo Pipe imbriqués : {{maVar2 | number : '3.1-3' | currency : 'EUR'}}</p>
+
+<hr>
+
+<p>Date du jour: {{maVar3}}</p>
+<p>Démo Date Pipe {{maVar3 | date : 'dd-MM-yyyy'}}</p>
+<p>Démo Date Pipe {{maVar3 | date : 'dd/MMMM/yy'}}</p>
+
+<hr>
+
+<p>Valeur par défaut :  {{maVar4}}C°</p>
+<p>Custom Pipe :  {{maVar4 | tofahrenheit}}F°</p>
+
+<hr>
+
+<p>Valeur par défaut :  {{maVar4}}C°</p>
+<p>Vers F° : {{maVar4 | temperature : 'f'}}</p>
+<p>Vers C° : {{maVar4 | temperature : 'c'}}</p>
+<p>Avec erreur : {{maVar4 | temperature : 'z'}}</p>
