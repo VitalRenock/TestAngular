@@ -1,0 +1,12 @@
+<h3>Component Directive</h3>
+
+<h4>NgStyle</h4>
+<p [ngStyle]="currentStyle">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut laborum, dolorum suscipit maiores soluta officiis perspiciatis. Molestias aperiam temporibus eius repellat consequuntur sint, provident rem quos iste, ullam dolores fugiat.
+</p>
+<button (click)="switchItalic()">Italic</button>
+<button (click)="switchBold()">Bold</button>
+<button (click)="switchSize()">Size</button>
+
+<p [ngClass]="{monCss : class}">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet optio dolorum sit, fugit nisi recusandae magni nam at ipsam velit autem asperiores quasi non, expedita, praesentium error molestiae commodi ipsum.</p>
+<button (click)="switchClasse()">Classe</button>

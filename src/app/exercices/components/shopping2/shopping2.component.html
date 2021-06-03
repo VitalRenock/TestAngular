@@ -1,0 +1,13 @@
+<h3>Liste de course (Utilisation des Services)</h3>
+
+<input type="text" [(ngModel)]="article">
+<button (click)="ajout()">Ajouter</button>
+
+<div *ngFor="let article of articles, let i = index">
+    <p>
+        - {{article.name}} : {{article.quantity}}
+        <button (click)="addQty(i)">+</button>
+        <button (click)="removeQty(i)">-</button>
+        <button (click)="supprimer(i)">x</button>
+    </p>
+</div>

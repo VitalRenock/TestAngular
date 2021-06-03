@@ -1,0 +1,5 @@
+<p>Demo Services et Injection</p>
+
+<p>Statut de connexion: {{isConnected}}</p>
+<button (click)="login()" *ngIf="!isConnected">Se Connecter</button>
+<button (click)="logout()" *ngIf="isConnected">Se Déconnecter</button>

@@ -1,0 +1,15 @@
+<h3>Ma liste de Shopping</h3>
+
+<input type="text" [(ngModel)]="inputUser" >
+<button (click)="addArticle()">Ajouter</button>
+<hr>
+<app-liste
+    [listToDisplay]="shoppingList"
+></app-liste>
+
+<!-- 
+<app-liste
+[listToDisplay]="shoppingList"
+(monEvent)="copyList($event)"
+></app-liste> 
+-->

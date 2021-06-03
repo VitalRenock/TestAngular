@@ -1,0 +1,28 @@
+<p>Structural Directives</p>
+
+<h4>NgIf</h4>
+<div (click)="toggle()">
+    <p style="cursor: pointer;">Afficher le texte</p>
+</div>
+<div *ngIf="isToggled">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, facere aliquam. Unde eaque fugit officia perferendis, reiciendis commodi sunt, fugiat officiis rem quis suscipit reprehenderit totam, ratione dolorem velit iste!</p>
+</div>
+
+<h4>NgFor</h4>
+<ul>
+    <li *ngFor="let item of liste; let i = index; let pair = even">
+        <p [ngClass]="{monCss : pair}">{{i}} - {{item}}</p>
+    </li>
+</ul>
+
+<h4>NgSwitch</h4>
+<input type="text" [(ngModel)]="maVar">
+
+<div [ngSwitch]="maVar">
+    <div *ngSwitchCase="1">Pomme</div>
+    <div *ngSwitchCase="2">Poire</div>
+    <div *ngSwitchCase="3">Peche</div>
+    <div *ngSwitchDefault>Entrez 1,2,3</div>
+</div>
+
+<p appSurligneur>Demo Custom directive</p>

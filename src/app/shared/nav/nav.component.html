@@ -1,3 +1,5 @@
+<!-- Ancien Menu
+
 <h4>Menu</h4>
 <a routerLink="home">Home</a>
 <br />
@@ -11,7 +13,28 @@
 <a routerLink="demo/demo2">Demo 2 - Event Binding</a>
 <br>
 <a routerLink="demo/demo3">Demo 3 - Pipes</a>
+<br>
+<a routerLink="demo/demo4">Demo 4 - Directives</a>
+<br>
+<a routerLink="demo/demo5">Demo 5 - Structural Directives (If, For, ...)</a>
 
 <h5>Exercices</h5>
 <br>
-<a routerLink="exercices/chrono">Exo - Chronomètre</a>
+<a routerLink="exercices/chrono">Exo - Chronomètre</a> 
+
+-->
+
+
+<ul>
+    <li  *ngFor="let item of mesLinks, let i = index">
+        <a (click)="changeToggle(i)" 
+            [routerLink]="item.url" 
+            [ngClass]="{'master': item.children}"
+        >{{item.title}}</a>
+        <ul *ngIf="item.children && item.isVisible">    
+            <li *ngFor="let child of item.children">
+                <a routerLink={{child.url}}>{{child.title}}</a>
+            </li>
+        </ul>
+    </li>
+</ul>

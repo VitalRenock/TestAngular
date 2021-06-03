@@ -1,0 +1,10 @@
+<h3>Demo @Input/@Output</h3>
+<p>Je suis dans le composant parent</p>
+
+<app-enfant 
+    title="Titre pour l'enfant" 
+    contenu="plein de blabla" 
+    [lienPourEnfant]="lien"
+    (monEvent)="reponseDuChildren($event)"
+    ></app-enfant>
+<p>En attente de l'enfant : {{messageDuChildren}}</p>

@@ -1,0 +1,27 @@
+<h3>Les Formulaires</h3>
+
+<!-- On lie le formulaire à la propriété FormGroup coté Ts -->
+<form [formGroup]="myFormGroup" (ngSubmit)="onSubmit()">
+    <!-- On lie les FormControls aux inputs -->
+    Nom: <input type="text" formControlName="nomControl"><br>
+    <p style="color: red;" *ngIf="myFormGroup.controls['nomControl'].invalid">
+        {{(myFormGroup.controls['nomControl'].errors ? myFormGroup.controls['nomControl'].errors['TropCourtError'] : "")}}
+        {{(myFormGroup.controls['nomControl'].errors ? myFormGroup.controls['nomControl'].errors['NullError'] : "")}}
+    </p>
+    Email: <input type="email" formControlName="emailControl"><br>
+    <p style="color: red;" *ngIf="myFormGroup.controls['emailControl'].invalid">
+        {{(myFormGroup.controls['emailControl'].errors ? myFormGroup.controls['emailControl'].errors['TropCourtError'] : "")}}
+        {{(myFormGroup.controls['emailControl'].errors ? myFormGroup.controls['emailControl'].errors['NullError'] : "")}}
+    </p>
+    <button type="button" (click)="addControlToArray()">Ajouter jeu</button>
+    <br>
+
+    <div *ngIf="getArray().controls != null" formArrayName="gameListControl">
+        <div *ngFor="let c of getArray().controls; let i = index">
+            <p>
+                Jeu {{i + 1}} <input type="text" [formControlName]="i">
+            </p>
+        </div>
+    </div>
+    <button type="submit" [disabled]="myFormGroup.invalid">Valider</button>
+</form>

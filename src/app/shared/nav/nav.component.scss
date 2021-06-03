@@ -1,0 +1,24 @@
+ul {
+    padding : 0;
+    list-style-type: none;
+    font-weight: bold;
+}
+ul li {
+    padding-left: 15px;
+    padding-top: 10;
+}
+
+a{
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: salmon;
+    text-decoration: underline;
+}
+
+.master {
+    text-decoration: underline;
+}
