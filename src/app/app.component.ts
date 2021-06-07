@@ -20,8 +20,11 @@ export class AppComponent {
       { url: '/demo/demo4', title : 'Demo 4 - Component Bindings' },
       { url: '/demo/demo5', title : 'Demo 5 - Structural Bindings' },
       { url: '/demo/demo6', title : 'Demo 6 - @Input et @Ouput' },
-      { url: '/demo/demo7', title : 'Demo 7 - @Input et @Ouput' },
-      { url: '/demo/demo8', title : 'Demo 8 - Formulaires' }
+      { url: '/demo/demo7', title : 'Demo 7 - Service et injection' },
+      { url: '/demo/demo8', title : 'Demo 8 - Formulaires' },
+      { url: '/demo/demo9', title : 'Demo 9 - Routing' },
+      { url: '/demo/demo10', title : 'Demo 10 - Guard' },
+      { url: '/demo/demo11', title : 'Demo 11 - Resolver' },
     ] },
     { title: 'Exercices', children :
     [
