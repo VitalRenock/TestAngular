@@ -17,6 +17,9 @@ const routes: Routes = [
   // Ajout du module Exercices
   { path : 'exercices', loadChildren : () => import('./exercices/exercices.module').then(m => m.ExercicesModule) },
 
+  // Ajout du module Fan
+  { path : 'fan', loadChildren : () => import('./fan/fan.module').then(m => m.FanModule) },
+
   // Gestion des erreurs
   { path : '404', component : FourOFourComponent },
   { path : '**', redirectTo : '404', pathMatch : 'full' }

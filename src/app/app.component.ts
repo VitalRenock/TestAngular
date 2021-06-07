@@ -31,6 +31,14 @@ export class AppComponent {
       { url: '/exercices/chrono', title: 'Chronomètre'},
       { url: '/exercices/shopping', title: 'Shopping List'},
       { url: '/exercices/shopping2', title: 'Shopping List 2'}
+    ] },
+    { title: 'Module Fan', children :
+    [
+      { url: '/fan/listing', title: 'Listing'},
+      { url: '/fan/details', title: 'Details'},
+      { url: '/fan/create', title: 'Create'},
+      { url: '/fan/update', title: 'Update'},
+      { url: '/fan/delete', title: 'Delete'}
     ] }
   ]
 }

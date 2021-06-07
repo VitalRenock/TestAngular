@@ -1,0 +1,8 @@
+<h2>Liste des fans:</h2>
+<br>
+
+<div *ngFor="let fan of fans, let i = index">
+    <p>
+        {{fan.name}} - {{fan.birthday}}
+    </p>
+</div>
